@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1225.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@startpage.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="821.0" layoutY="590.0" mnemonicParsing="false" onAction="#gameStartButton" prefHeight="50.0" prefWidth="250.0" text="Game Start">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="154.0" layoutY="590.0" mnemonicParsing="false" onAction="#backButton" prefHeight="50.0" prefWidth="250.0" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="pacmanBox" layoutX="311.0" layoutY="211.0" prefHeight="40.0" prefWidth="200.0" />
+      <ComboBox fx:id="ghostBox" layoutX="311.0" layoutY="279.0" prefHeight="40.0" prefWidth="200.0" />
+      <ComboBox fx:id="obstacleBox" layoutX="311.0" layoutY="346.0" prefHeight="40.0" prefWidth="200.0" />
+      <ComboBox fx:id="backgroundBox" layoutX="311.0" layoutY="415.0" prefHeight="40.0" prefWidth="200.0" />
+      <ComboBox fx:id="difficultyBox" layoutX="311.0" layoutY="484.0" prefHeight="40.0" prefWidth="200.0" />
+      <Label fx:id="lb1" layoutX="211.0" layoutY="147.0" text="Settings:" />
+      <Label layoutX="151.0" layoutY="128.0" text="Settings:" textFill="#fffefe">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Button layoutX="680.0" layoutY="466.0" mnemonicParsing="false" onAction="#selectMap1" prefHeight="70.0" prefWidth="70.0" text="Map1" />
+      <Button layoutX="777.0" layoutY="466.0" mnemonicParsing="false" onAction="#selectMap2" prefHeight="70.0" prefWidth="70.0" text="Map2" />
+      <Button layoutX="876.0" layoutY="466.0" mnemonicParsing="false" onAction="#selectMap3" prefHeight="70.0" prefWidth="70.0" text="Map3" />
+      <Button disable="true" layoutX="972.0" layoutY="466.0" mnemonicParsing="false" onAction="#selectMap4" prefHeight="70.0" prefWidth="70.0" text="Coming Soon" />
+      <ImageView fx:id="mapView" fitHeight="220.0" fitWidth="400.0" layoutX="661.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Map00.JPG" />
+         </image></ImageView>
+      <Label layoutX="155.0" layoutY="217.0" text="Pacman:" textFill="#f8f7f7">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="282.0" text="Ghost:" textFill="#f8f7f7">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="352.0" text="Wall Color:" textFill="#f8f7f7">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="421.0" text="Ground Color:" textFill="#f8f7f7">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="487.0" text="Difficulty:" textFill="#f8f7f7">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="488.0" layoutY="590.0" mnemonicParsing="false" onAction="#storeButton" prefHeight="50.0" prefWidth="250.0" text="Store">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1225.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StoreController">
+   <children>
+      <ImageView fitHeight="718.0" fitWidth="1225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@startpage.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="130.0" layoutY="83.0" text="Welcome to the magic store:" textFill="#fffefe">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="moreLife" layoutX="255.0" layoutY="447.0" mnemonicParsing="false" onAction="#buyLife" prefHeight="50.0" prefWidth="280.0" text="More Life          $1000">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="speedUp" layoutX="689.0" layoutY="447.0" mnemonicParsing="false" onAction="#buySpeed" prefHeight="50.0" prefWidth="280.0" text="Speed Up          $1000">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label fx:id="yourMoney" layoutX="950.0" layoutY="80.0" text="\$Label" textFill="#c3a40e">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="240.0" fitWidth="280.0" layoutX="252.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="240.0" fitWidth="280.0" layoutX="689.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="513.0" layoutY="566.0" mnemonicParsing="false" onAction="#storeGoBack" prefHeight="40.0" prefWidth="200.0" text="Go Back">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
